@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>document</title>
+</head>
+<body bgcolor="skyblue"text="black">
+    <center> <h1><i>BULB</i></h1></center>
+    <marquee direction="right"
+            <b><h1>Testing bulb</h1></b></marquee>
+    <center>
+        <button onclick="turnon();">turn on</button>
+        <img src="bulboff.jfif" alt="bulboff" id="bulb" width="10%">
+        <button onclick="turnoff();">turnoff</button>
+        <script>
+            var bulb = document.getElementById("bulb");
+            function turnon() {
+                bulb.src = "bulbon.jpg";
+            }
+            function turnoff() {
+                bulb.src = "bulboff.jfif";
+            }
+
+
+        </script>
+    </center>
+</body>
+</html>
